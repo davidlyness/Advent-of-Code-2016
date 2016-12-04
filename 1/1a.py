@@ -1,5 +1,5 @@
 # coding=utf-8
-"""Advent of Code 2016, Day 1, Part 2"""
+"""Advent of Code 2016, Day 1, Part 1"""
 
 
 def turn(direction, action):
