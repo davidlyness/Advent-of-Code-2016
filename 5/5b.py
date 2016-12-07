@@ -18,7 +18,6 @@ while any(x is None for x in password):
     if hashed_string[:5] == "00000" and position in range(8):
         if password[position] is None:
             password[position] = hashed_string[6]
-            print("Position " + hashed_string[5] + " is " + hashed_string[6])
     index += 1
 
 print("".join(password))
