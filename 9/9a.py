@@ -14,7 +14,7 @@ def get_decompress_length(s):
     :return: decompressed length of string
     """
     result = 0
-    pattern = re.compile("\((\d+)x(\d+)\).*?")
+    pattern = re.compile("\((\d+)x(\d+)\).*")
     if "(" in s:
         while len(s) > 0:
             match = pattern.match(s)
