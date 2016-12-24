@@ -6,9 +6,8 @@ import networkx
 
 
 with open("input.txt") as f:
-    puzzle_map = f.read().rstrip("\n")
+    puzzle_rows = f.read().rstrip("\n").split()
 
-puzzle_rows = puzzle_map.split()
 num_rows = len(puzzle_rows)
 num_cols = len(puzzle_rows[0])
 num_nodes = 0
