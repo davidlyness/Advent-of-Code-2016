@@ -56,8 +56,7 @@ def get_clock_output(a_value):
 correct_clock_signal = None
 candidate_register_value = 1
 while not correct_clock_signal:
-    output = get_clock_output(candidate_register_value)
-    if len(output) == 50:
+    if len(get_clock_output(candidate_register_value)) == 50:
         correct_clock_signal = candidate_register_value
     candidate_register_value += 1
 
